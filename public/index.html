@@ -1,0 +1,365 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunrise Bakery Yard Style | Fresh Jamaican Baked Goods</title>
+  <meta name="description" content="Sunrise Bakery Yard Style serves authentic Jamaican baked goods — patties, coco bread, bun and cheese, and hardoe bread — made from Granny's original recipe since 2020.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://sunrise-bakery-yard-style-jezc.onrender.com/">
+
+  <meta property="og:title" content="Sunrise Bakery Yard Style | Fresh Jamaican Baked Goods">
+  <meta property="og:description" content="Sunrise Bakery Yard Style serves authentic Jamaican baked goods — patties, coco bread, bun and cheese, and hardoe bread — made from Granny's original recipe since 2020.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sunrise-bakery-yard-style-jezc.onrender.com">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200">
+  <meta property="og:image:alt" content="Golden Jamaican beef patties fresh from the oven on a wooden board">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sunrise Bakery Yard Style | Fresh Jamaican Baked Goods">
+  <meta name="twitter:description" content="Sunrise Bakery Yard Style serves authentic Jamaican baked goods — patties, coco bread, bun and cheese, and hardoe bread — made from Granny's original recipe since 2020.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Bakery",
+        "name": "Sunrise Bakery Yard Style",
+        "url": "https://sunrise-bakery-yard-style-jezc.onrender.com",
+        "description": "Authentic Jamaican baked goods made from Granny's original recipe since 2020. Patties, coco bread, bun and cheese, and hardoe bread.",
+        "email": "solvikings23@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 MN"
+        },
+        "foundingDate": "2020",
+        "servesCuisine": "Jamaican"
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://sunrise-bakery-yard-style-jezc.onrender.com",
+        "name": "Sunrise Bakery Yard Style",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://sunrise-bakery-yard-style-jezc.onrender.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "name": "Jamaican Baked Goods Menu",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Jamaican Patties"},
+          {"@type": "ListItem", "position": 2, "name": "Coco Bread"},
+          {"@type": "ListItem", "position": 3, "name": "Bun and Cheese"},
+          {"@type": "ListItem", "position": 4, "name": "Hardoe Bread"}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1"></script>
+</head>
+<body>
+
+  <nav aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" data-content="nav.logo">Sunrise<span>Bakery</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Find Us</a></li>
+        <li>
+          <a href="mailto:solvikings23@gmail.com" class="nav-cta" aria-label="Order fresh Jamaican baked goods now">Order Now</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero — Sunrise Bakery Yard Style">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
+          alt="Golden Jamaican beef patties fresh from the oven on a wooden board"
+          class="hero-img"
+          loading="eager"
+          width="800"
+          height="600"
+          decoding="async"
+          data-content="hero.image"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-content="hero.eyebrow">Est. 2020 · Granny's Recipe</p>
+        <h1 class="hero-headline" data-content="hero.headline">Yard Style<br><em>Baked</em><br>Fresh Daily</h1>
+        <p class="hero-sub" data-content="hero.subheadline">Authentic Jamaican flavours — patties, coco bread,<br>bun &amp; cheese and hardoe bread made the old way.</p>
+        <a href="mailto:solvikings23@gmail.com" class="btn-primary" data-content="hero.cta">Order Now</a>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE TICKER -->
+    <div class="ticker-bar" aria-label="Our baked goods" role="marquee">
+      <div class="ticker-track" aria-hidden="true">
+        <span>Jamaican Patties</span>
+        <span class="ticker-dot">✦</span>
+        <span>Coco Bread</span>
+        <span class="ticker-dot">✦</span>
+        <span>Bun &amp; Cheese</span>
+        <span class="ticker-dot">✦</span>
+        <span>Hardoe Bread</span>
+        <span class="ticker-dot">✦</span>
+        <span>Fresh Daily</span>
+        <span class="ticker-dot">✦</span>
+        <span>Granny's Recipe</span>
+        <span class="ticker-dot">✦</span>
+        <span>Jamaican Patties</span>
+        <span class="ticker-dot">✦</span>
+        <span>Coco Bread</span>
+        <span class="ticker-dot">✦</span>
+        <span>Bun &amp; Cheese</span>
+        <span class="ticker-dot">✦</span>
+        <span>Hardoe Bread</span>
+        <span class="ticker-dot">✦</span>
+        <span>Fresh Daily</span>
+        <span class="ticker-dot">✦</span>
+        <span>Granny's Recipe</span>
+        <span class="ticker-dot">✦</span>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <section class="stats-band" aria-label="Bakery highlights">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <span class="stat-num" data-content="stats.years">5+</span>
+          <span class="stat-label" data-content="stats.years_label">Years Baking</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-content="stats.recipes">1</span>
+          <span class="stat-label" data-content="stats.recipes_label">Original Recipe</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-content="stats.items">4</span>
+          <span class="stat-label" data-content="stats.items_label">Signature Items</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-content="stats.fresh">Daily</span>
+          <span class="stat-label" data-content="stats.fresh_label">Baked Fresh</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section" aria-label="About Sunrise Bakery Yard Style">
+      <div class="about-inner">
+        <div class="about-image-col">
+          <div class="about-img-frame">
+            <img
+              src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400"
+              alt="Warm Jamaican bread loaves cooling on a rustic kitchen counter"
+              loading="lazy"
+              width="400"
+              height="520"
+              decoding="async"
+              data-content="about.image"
+            >
+          </div>
+          <div class="about-tag" aria-hidden="true">Since 2020</div>
+        </div>
+        <div class="about-text-col">
+          <p class="section-label" aria-hidden="true">Our Story</p>
+          <h2 data-content="about.heading">Born from<br>Granny's Kitchen</h2>
+          <p class="about-body" data-content="about.body">Sunrise Bakery Yard Style started in 2020 with a simple mission — keep the taste of Jamaica alive. Every patty, every loaf, every bun is made from Granny's original recipe brought straight from the island. No shortcuts. No compromises. Just real yard-style baking the way it's been done for generations.</p>
+          <a href="mailto:solvikings23@gmail.com" class="btn-secondary" aria-label="Contact Sunrise Bakery to place an order">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU / SERVICES -->
+    <section id="menu" class="menu-section" aria-label="Our Jamaican baked goods menu">
+      <div class="menu-header">
+        <p class="section-label" aria-hidden="true">The Menu</p>
+        <h2 data-content="menu.heading">What We Bake</h2>
+      </div>
+      <div class="menu-list">
+
+        <article class="menu-item" aria-label="Jamaican Patties">
+          <div class="menu-item-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400"
+              alt="Flaky golden Jamaican beef patty on parchment paper"
+              loading="lazy"
+              width="400"
+              height="300"
+              decoding="async"
+              data-content="menu.patties_image"
+            >
+          </div>
+          <div class="menu-item-body">
+            <span class="menu-num" aria-hidden="true">01</span>
+            <h3 data-content="menu.patties_title">Jamaican Patties</h3>
+            <p data-content="menu.patties_desc">Flaky golden pastry filled with richly spiced beef, baked fresh every morning the way Granny intended — bold flavour, never bland.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" aria-label="Coco Bread">
+          <div class="menu-item-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400"
+              alt="Soft fluffy coco bread rolls fresh from the bakery oven"
+              loading="lazy"
+              width="400"
+              height="300"
+              decoding="async"
+              data-content="menu.coco_image"
+            >
+          </div>
+          <div class="menu-item-body">
+            <span class="menu-num" aria-hidden="true">02</span>
+            <h3 data-content="menu.coco_title">Coco Bread</h3>
+            <p data-content="menu.coco_desc">Soft, pillowy and slightly sweet — our coco bread is the perfect companion to a patty or a standout on its own. Classic Jamaican comfort.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" aria-label="Bun and Cheese">
+          <div class="menu-item-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400"
+              alt="Sliced Jamaican spiced bun with a thick layer of cheddar cheese"
+              loading="lazy"
+              width="400"
+              height="300"
+              decoding="async"
+              data-content="menu.bun_image"
+            >
+          </div>
+          <div class="menu-item-body">
+            <span class="menu-num" aria-hidden="true">03</span>
+            <h3 data-content="menu.bun_title">Bun &amp; Cheese</h3>
+            <p data-content="menu.bun_desc">Dark, richly spiced Jamaican bun paired with sharp cheddar cheese. A national tradition — baked with the same care every single time.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" aria-label="Hardoe Bread">
+          <div class="menu-item-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?w=400"
+              alt="Freshly baked hardoe bread loaves with a golden crust"
+              loading="lazy"
+              width="400"
+              height="300"
+              decoding="async"
+              data-content="menu.hardoe_image"
+            >
+          </div>
+          <div class="menu-item-body">
+            <span class="menu-num" aria-hidden="true">04</span>
+            <h3 data-content="menu.hardoe_title">Hardoe Bread</h3>
+            <p data-content="menu.hardoe_desc">Dense, flavourful and deeply satisfying — our hardoe bread has a crust that sings and a crumb that holds. A yard-style staple done right.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="menu-cta-wrap">
+        <a href="mailto:solvikings23@gmail.com" class="btn-primary large" aria-label="Order fresh Jamaican baked goods from Sunrise Bakery Yard Style">Order Fresh Today</a>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" aria-label="Order from Sunrise Bakery">
+      <div class="cta-band-inner">
+        <h2 data-content="cta.heading">Ready for Real<br>Jamaican Taste?</h2>
+        <p data-content="cta.body">Drop us a message and we'll sort you out. Fresh baked goods, straight from the yard.</p>
+        <a href="mailto:solvikings23@gmail.com" class="btn-primary" aria-label="Send an email to order from Sunrise Bakery Yard Style">Order Now — Email Us</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section" aria-label="Contact information">
+      <div class="contact-inner">
+        <div class="contact-text">
+          <p class="section-label" aria-hidden="true">Find Us</p>
+          <h2 data-content="contact.heading">Come Get<br>Your Bake On</h2>
+          <p class="contact-intro" data-content="contact.intro">We're ready to fill your order. Reach out by email and we'll be in touch faster than bread rises.</p>
+        </div>
+        <address class="contact-details" aria-label="Sunrise Bakery contact details">
+          <div class="contact-card">
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <div>
+              <strong>Email Us</strong>
+              <a href="mailto:solvikings23@gmail.com" data-content="contact.email">solvikings23@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon" aria-hidden="true">📍</span>
+            <div>
+              <strong>Location</strong>
+              <span data-content="contact.address">123 MN</span>
+            </div>
+          </div>
+        </address>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo" data-content="footer.logo">Sunrise Bakery Yard Style</span>
+        <p data-content="footer.tagline">Fresh Jamaican Baked Goods · Est. 2020</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Find Us</a>
+        <a href="mailto:solvikings23@gmail.com" aria-label="Email Sunrise Bakery to place an order">Order Now</a>
+      </nav>
+      <p class="footer-copy" data-content="footer.copyright">&copy; <time datetime="2025">2025</time> Sunrise Bakery Yard Style. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger toggle — inline acceptable per spec
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        navLinks.classList.toggle('open');
+      });
+    }
+  </script>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+  <script src="tracking.js"></script>
+</body>
+</html>
