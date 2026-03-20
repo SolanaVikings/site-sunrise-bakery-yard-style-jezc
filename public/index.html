@@ -1,365 +1,464 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunrise Bakery Yard Style | Fresh Jamaican Baked Goods</title>
-  <meta name="description" content="Sunrise Bakery Yard Style serves authentic Jamaican baked goods — patties, coco bread, bun and cheese, and hardoe bread — made from Granny's original recipe since 2020.">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="https://sunrise-bakery-yard-style-jezc.onrender.com/">
-
-  <meta property="og:title" content="Sunrise Bakery Yard Style | Fresh Jamaican Baked Goods">
-  <meta property="og:description" content="Sunrise Bakery Yard Style serves authentic Jamaican baked goods — patties, coco bread, bun and cheese, and hardoe bread — made from Granny's original recipe since 2020.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sunrise-bakery-yard-style-jezc.onrender.com">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200">
-  <meta property="og:image:alt" content="Golden Jamaican beef patties fresh from the oven on a wooden board">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sunrise Bakery Yard Style | Fresh Jamaican Baked Goods">
-  <meta name="twitter:description" content="Sunrise Bakery Yard Style serves authentic Jamaican baked goods — patties, coco bread, bun and cheese, and hardoe bread — made from Granny's original recipe since 2020.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Bakery",
-        "name": "Sunrise Bakery Yard Style",
-        "url": "https://sunrise-bakery-yard-style-jezc.onrender.com",
-        "description": "Authentic Jamaican baked goods made from Granny's original recipe since 2020. Patties, coco bread, bun and cheese, and hardoe bread.",
-        "email": "solvikings23@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "123 MN"
-        },
-        "foundingDate": "2020",
-        "servesCuisine": "Jamaican"
-      },
-      {
-        "@type": "WebSite",
-        "url": "https://sunrise-bakery-yard-style-jezc.onrender.com",
-        "name": "Sunrise Bakery Yard Style",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://sunrise-bakery-yard-style-jezc.onrender.com/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "ItemList",
-        "name": "Jamaican Baked Goods Menu",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Jamaican Patties"},
-          {"@type": "ListItem", "position": 2, "name": "Coco Bread"},
-          {"@type": "ListItem", "position": 3, "name": "Bun and Cheese"},
-          {"@type": "ListItem", "position": 4, "name": "Hardoe Bread"}
-        ]
-      }
-    ]
-  }
-  </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co https://api.stripe.com; img-src 'self' https://*.supabase.co data: blob:; frame-src 'none';">
+    <title>Your Business Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <nav aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo" data-content="nav.logo">Sunrise<span>Bakery</span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" role="list">
-        <li><a href="#about">Our Story</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Find Us</a></li>
-        <li>
-          <a href="mailto:solvikings23@gmail.com" class="nav-cta" aria-label="Order fresh Jamaican baked goods now">Order Now</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <main>
-
-    <!-- HERO -->
-    <section class="hero" aria-label="Hero — Sunrise Bakery Yard Style">
-      <div class="hero-bg">
-        <img
-          src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
-          alt="Golden Jamaican beef patties fresh from the oven on a wooden board"
-          class="hero-img"
-          loading="eager"
-          width="800"
-          height="600"
-          decoding="async"
-          data-content="hero.image"
-        >
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <p class="hero-eyebrow" data-content="hero.eyebrow">Est. 2020 · Granny's Recipe</p>
-        <h1 class="hero-headline" data-content="hero.headline">Yard Style<br><em>Baked</em><br>Fresh Daily</h1>
-        <p class="hero-sub" data-content="hero.subheadline">Authentic Jamaican flavours — patties, coco bread,<br>bun &amp; cheese and hardoe bread made the old way.</p>
-        <a href="mailto:solvikings23@gmail.com" class="btn-primary" data-content="hero.cta">Order Now</a>
-      </div>
-      <div class="hero-scroll-hint" aria-hidden="true">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
-
-    <!-- MARQUEE TICKER -->
-    <div class="ticker-bar" aria-label="Our baked goods" role="marquee">
-      <div class="ticker-track" aria-hidden="true">
-        <span>Jamaican Patties</span>
-        <span class="ticker-dot">✦</span>
-        <span>Coco Bread</span>
-        <span class="ticker-dot">✦</span>
-        <span>Bun &amp; Cheese</span>
-        <span class="ticker-dot">✦</span>
-        <span>Hardoe Bread</span>
-        <span class="ticker-dot">✦</span>
-        <span>Fresh Daily</span>
-        <span class="ticker-dot">✦</span>
-        <span>Granny's Recipe</span>
-        <span class="ticker-dot">✦</span>
-        <span>Jamaican Patties</span>
-        <span class="ticker-dot">✦</span>
-        <span>Coco Bread</span>
-        <span class="ticker-dot">✦</span>
-        <span>Bun &amp; Cheese</span>
-        <span class="ticker-dot">✦</span>
-        <span>Hardoe Bread</span>
-        <span class="ticker-dot">✦</span>
-        <span>Fresh Daily</span>
-        <span class="ticker-dot">✦</span>
-        <span>Granny's Recipe</span>
-        <span class="ticker-dot">✦</span>
-      </div>
-    </div>
-
-    <!-- STATS -->
-    <section class="stats-band" aria-label="Bakery highlights">
-      <div class="stats-inner">
-        <div class="stat-item">
-          <span class="stat-num" data-content="stats.years">5+</span>
-          <span class="stat-label" data-content="stats.years_label">Years Baking</span>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">
+            <span class="logo-diamond">&bull;</span>
+            <span data-content="site.name">Your Business Name</span>
+        </a>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#quiz" class="quiz-nav-link" style="display:none;">Quiz</a>
+            <a href="#shop" class="ecom-nav-link" style="display:none;">Shop</a>
+            <a href="#booking" class="ecom-nav-link" style="display:none;">Book</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="stat-divider" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-content="stats.recipes">1</span>
-          <span class="stat-label" data-content="stats.recipes_label">Original Recipe</span>
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+        <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
         </div>
-        <div class="stat-divider" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-content="stats.items">4</span>
-          <span class="stat-label" data-content="stats.items_label">Signature Items</span>
-        </div>
-        <div class="stat-divider" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-content="stats.fresh">Daily</span>
-          <span class="stat-label" data-content="stats.fresh_label">Baked Fresh</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="about-section" aria-label="About Sunrise Bakery Yard Style">
-      <div class="about-inner">
-        <div class="about-image-col">
-          <div class="about-img-frame">
-            <img
-              src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400"
-              alt="Warm Jamaican bread loaves cooling on a rustic kitchen counter"
-              loading="lazy"
-              width="400"
-              height="520"
-              decoding="async"
-              data-content="about.image"
-            >
-          </div>
-          <div class="about-tag" aria-hidden="true">Since 2020</div>
-        </div>
-        <div class="about-text-col">
-          <p class="section-label" aria-hidden="true">Our Story</p>
-          <h2 data-content="about.heading">Born from<br>Granny's Kitchen</h2>
-          <p class="about-body" data-content="about.body">Sunrise Bakery Yard Style started in 2020 with a simple mission — keep the taste of Jamaica alive. Every patty, every loaf, every bun is made from Granny's original recipe brought straight from the island. No shortcuts. No compromises. Just real yard-style baking the way it's been done for generations.</p>
-          <a href="mailto:solvikings23@gmail.com" class="btn-secondary" aria-label="Contact Sunrise Bakery to place an order">Get in Touch</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- MENU / SERVICES -->
-    <section id="menu" class="menu-section" aria-label="Our Jamaican baked goods menu">
-      <div class="menu-header">
-        <p class="section-label" aria-hidden="true">The Menu</p>
-        <h2 data-content="menu.heading">What We Bake</h2>
-      </div>
-      <div class="menu-list">
-
-        <article class="menu-item" aria-label="Jamaican Patties">
-          <div class="menu-item-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400"
-              alt="Flaky golden Jamaican beef patty on parchment paper"
-              loading="lazy"
-              width="400"
-              height="300"
-              decoding="async"
-              data-content="menu.patties_image"
-            >
-          </div>
-          <div class="menu-item-body">
-            <span class="menu-num" aria-hidden="true">01</span>
-            <h3 data-content="menu.patties_title">Jamaican Patties</h3>
-            <p data-content="menu.patties_desc">Flaky golden pastry filled with richly spiced beef, baked fresh every morning the way Granny intended — bold flavour, never bland.</p>
-          </div>
-        </article>
-
-        <article class="menu-item" aria-label="Coco Bread">
-          <div class="menu-item-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400"
-              alt="Soft fluffy coco bread rolls fresh from the bakery oven"
-              loading="lazy"
-              width="400"
-              height="300"
-              decoding="async"
-              data-content="menu.coco_image"
-            >
-          </div>
-          <div class="menu-item-body">
-            <span class="menu-num" aria-hidden="true">02</span>
-            <h3 data-content="menu.coco_title">Coco Bread</h3>
-            <p data-content="menu.coco_desc">Soft, pillowy and slightly sweet — our coco bread is the perfect companion to a patty or a standout on its own. Classic Jamaican comfort.</p>
-          </div>
-        </article>
-
-        <article class="menu-item" aria-label="Bun and Cheese">
-          <div class="menu-item-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400"
-              alt="Sliced Jamaican spiced bun with a thick layer of cheddar cheese"
-              loading="lazy"
-              width="400"
-              height="300"
-              decoding="async"
-              data-content="menu.bun_image"
-            >
-          </div>
-          <div class="menu-item-body">
-            <span class="menu-num" aria-hidden="true">03</span>
-            <h3 data-content="menu.bun_title">Bun &amp; Cheese</h3>
-            <p data-content="menu.bun_desc">Dark, richly spiced Jamaican bun paired with sharp cheddar cheese. A national tradition — baked with the same care every single time.</p>
-          </div>
-        </article>
-
-        <article class="menu-item" aria-label="Hardoe Bread">
-          <div class="menu-item-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?w=400"
-              alt="Freshly baked hardoe bread loaves with a golden crust"
-              loading="lazy"
-              width="400"
-              height="300"
-              decoding="async"
-              data-content="menu.hardoe_image"
-            >
-          </div>
-          <div class="menu-item-body">
-            <span class="menu-num" aria-hidden="true">04</span>
-            <h3 data-content="menu.hardoe_title">Hardoe Bread</h3>
-            <p data-content="menu.hardoe_desc">Dense, flavourful and deeply satisfying — our hardoe bread has a crust that sings and a crumb that holds. A yard-style staple done right.</p>
-          </div>
-        </article>
-
-      </div>
-
-      <div class="menu-cta-wrap">
-        <a href="mailto:solvikings23@gmail.com" class="btn-primary large" aria-label="Order fresh Jamaican baked goods from Sunrise Bakery Yard Style">Order Fresh Today</a>
-      </div>
-    </section>
-
-    <!-- CTA BAND -->
-    <section class="cta-band" aria-label="Order from Sunrise Bakery">
-      <div class="cta-band-inner">
-        <h2 data-content="cta.heading">Ready for Real<br>Jamaican Taste?</h2>
-        <p data-content="cta.body">Drop us a message and we'll sort you out. Fresh baked goods, straight from the yard.</p>
-        <a href="mailto:solvikings23@gmail.com" class="btn-primary" aria-label="Send an email to order from Sunrise Bakery Yard Style">Order Now — Email Us</a>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact-section" aria-label="Contact information">
-      <div class="contact-inner">
-        <div class="contact-text">
-          <p class="section-label" aria-hidden="true">Find Us</p>
-          <h2 data-content="contact.heading">Come Get<br>Your Bake On</h2>
-          <p class="contact-intro" data-content="contact.intro">We're ready to fill your order. Reach out by email and we'll be in touch faster than bread rises.</p>
-        </div>
-        <address class="contact-details" aria-label="Sunrise Bakery contact details">
-          <div class="contact-card">
-            <span class="contact-icon" aria-hidden="true">✉</span>
-            <div>
-              <strong>Email Us</strong>
-              <a href="mailto:solvikings23@gmail.com" data-content="contact.email">solvikings23@gmail.com</a>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-line"></span>
+                <span>Welcome</span>
+                <span class="badge-line"></span>
             </div>
-          </div>
-          <div class="contact-card">
-            <span class="contact-icon" aria-hidden="true">📍</span>
-            <div>
-              <strong>Location</strong>
-              <span data-content="contact.address">123 MN</span>
+            <h1 data-content="hero.headline">Your Main<br>Headline Here</h1>
+            <p class="hero-tagline" data-content="hero.tagline">A brief description of your business and what makes you stand out from the rest.</p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn btn-primary" data-content="hero.cta_text">Get Started</a>
+                <a href="#services" class="btn btn-outline">View Services</a>
             </div>
-          </div>
-        </address>
-      </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-frame">
+                <img data-content="hero.image" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Business image">
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num" data-content="hero.stat1_num">10+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-content="hero.stat2_num">500+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-  </main>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <div class="section-title-group">
+                <span class="section-label">What We Offer</span>
+                <h2 data-content="services.title">Our Services</h2>
+            </div>
+        </div>
+        <div class="services-grid">
+            <article class="service-card">
+                <div class="service-icon">&star;</div>
+                <h3 data-content="services.service1_name">Service One</h3>
+                <p data-content="services.service1_desc">A short description of this service and the value it provides to your customers.</p>
+                <div class="service-price" data-content="services.service1_price">$50</div>
+            </article>
+            <article class="service-card">
+                <div class="service-icon">&diamondsuit;</div>
+                <h3 data-content="services.service2_name">Service Two</h3>
+                <p data-content="services.service2_desc">A short description of this service and the value it provides to your customers.</p>
+                <div class="service-price" data-content="services.service2_price">$75</div>
+            </article>
+            <article class="service-card">
+                <div class="service-icon">&hearts;</div>
+                <h3 data-content="services.service3_name">Service Three</h3>
+                <p data-content="services.service3_desc">A short description of this service and the value it provides to your customers.</p>
+                <div class="service-price" data-content="services.service3_price">$100</div>
+            </article>
+            <article class="service-card">
+                <div class="service-icon">&clubs;</div>
+                <h3 data-content="services.service4_name">Service Four</h3>
+                <p data-content="services.service4_desc">A short description of this service and the value it provides to your customers.</p>
+                <div class="service-price" data-content="services.service4_price">$40</div>
+            </article>
+        </div>
+    </section>
 
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo" data-content="footer.logo">Sunrise Bakery Yard Style</span>
-        <p data-content="footer.tagline">Fresh Jamaican Baked Goods · Est. 2020</p>
-      </div>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="#about">Our Story</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Find Us</a>
-        <a href="mailto:solvikings23@gmail.com" aria-label="Email Sunrise Bakery to place an order">Order Now</a>
-      </nav>
-      <p class="footer-copy" data-content="footer.copyright">&copy; <time datetime="2025">2025</time> Sunrise Bakery Yard Style. All rights reserved.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-image">
+            <div class="image-frame large">
+                <img data-content="about.image" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&q=80" alt="About our business">
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <div class="section-title-group">
+                    <span class="section-label">Our Story</span>
+                    <h2 data-content="about.title">About Our Business</h2>
+                </div>
+            </div>
+            <p class="about-text" data-content="about.description">Tell your story here. Share what drives your business, your values, and why customers choose you over the competition.</p>
+            <div class="about-features">
+                <div class="feature">
+                    <span class="feature-icon">&check;</span>
+                    <span>Quality Service</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">&check;</span>
+                    <span>Experienced Team</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">&check;</span>
+                    <span>Customer Focused</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="section-header centered">
+            <span class="section-number">03</span>
+            <div class="section-title-group">
+                <span class="section-label">Our Work</span>
+                <h2>The Gallery</h2>
+            </div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img data-content="gallery.image1" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80" alt="Gallery image 1">
+            </div>
+            <div class="gallery-item">
+                <img data-content="gallery.image2" src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=400&q=80" alt="Gallery image 2">
+            </div>
+            <div class="gallery-item">
+                <img data-content="gallery.image3" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&q=80" alt="Gallery image 3">
+            </div>
+            <div class="gallery-item">
+                <img data-content="gallery.image4" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&q=80" alt="Gallery image 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (FREE) -->
+    <section id="testimonials" class="testimonials" aria-label="Customer testimonials">
+        <div class="section-header centered">
+            <span class="section-number">04</span>
+            <div class="section-title-group">
+                <span class="section-label">What People Say</span>
+                <h2 data-content="testimonials.title">Testimonials</h2>
+            </div>
+        </div>
+        <div class="testimonials-grid">
+            <article class="testimonial-card">
+                <div class="testimonial-rating" data-content="testimonials.review1_rating" aria-label="5 star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote class="testimonial-text" data-content="testimonials.review1_text">This business exceeded all my expectations. Highly recommended!</blockquote>
+                <p class="testimonial-author" data-content="testimonials.review1_author">Jane D.</p>
+            </article>
+            <article class="testimonial-card">
+                <div class="testimonial-rating" data-content="testimonials.review2_rating" aria-label="5 star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote class="testimonial-text" data-content="testimonials.review2_text">Professional service from start to finish. Will definitely be back.</blockquote>
+                <p class="testimonial-author" data-content="testimonials.review2_author">Mike R.</p>
+            </article>
+            <article class="testimonial-card">
+                <div class="testimonial-rating" data-content="testimonials.review3_rating" aria-label="5 star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote class="testimonial-text" data-content="testimonials.review3_text">Amazing experience. The team really knows what they are doing.</blockquote>
+                <p class="testimonial-author" data-content="testimonials.review3_author">Sarah L.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Quiz Section (QUIZ ADD-ON) -->
+    <section id="quiz" class="quiz" aria-label="Take our quiz" style="display:none;">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-number">05</span>
+                <div class="section-title-group">
+                    <span class="section-label">Test Yourself</span>
+                    <h2 data-content="quiz.title">Take Our Quiz</h2>
+                </div>
+            </div>
+            <p class="section-subtitle" data-content="quiz.subtitle">Answer a few questions to see your personalized results.</p>
+            <div id="quiz-widget" class="quiz-widget"></div>
+        </div>
+    </section>
+
+    <!-- Shop Section (ECOMMERCE) -->
+    <section id="shop" class="shop" aria-label="Shop" style="display:none;">
+        <div class="section-header centered">
+            <span class="section-number">05</span>
+            <div class="section-title-group">
+                <span class="section-label">Browse & Buy</span>
+                <h2 data-content="shop.title">Our Shop</h2>
+            </div>
+        </div>
+        <p class="shop-subtitle" data-content="shop.subtitle">Browse our selection and order online.</p>
+        <div id="products-grid" class="products-grid-shop"></div>
+    </section>
+
+    <!-- Cart Drawer -->
+    <div id="cart-drawer" class="cart-drawer" aria-label="Shopping cart" role="dialog" aria-hidden="true">
+        <div class="cart-drawer-overlay"></div>
+        <div class="cart-drawer-panel">
+            <div class="cart-drawer-header">
+                <h3>Your Cart</h3>
+                <button class="cart-drawer-close" aria-label="Close cart">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span id="cart-total-amount">0.00</span>
+                </div>
+                <input type="email" id="cart-customer-email" class="cart-email-input" placeholder="Your email for order confirmation" required>
+                <button id="cart-checkout-btn" class="btn btn-primary btn-large cart-checkout-btn">Checkout</button>
+            </div>
+        </div>
     </div>
-  </footer>
 
-  <script>
-    // Hamburger toggle — inline acceptable per spec
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    if (toggle && navLinks) {
-      toggle.addEventListener('click', function() {
-        const expanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', String(!expanded));
-        navLinks.classList.toggle('open');
-      });
-    }
-  </script>
+    <!-- Cart FAB -->
+    <button id="cart-fab" class="cart-fab" aria-label="Open cart" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+        <span id="cart-badge" class="cart-badge">0</span>
+    </button>
 
-  <script src="config.js"></script>
-  <script src="script.js"></script>
-  <script src="tracking.js"></script>
+    <!-- Booking Section (ECOMMERCE) -->
+    <section id="booking" class="booking" aria-label="Book an appointment" style="display:none;">
+        <div class="section-header centered">
+            <span class="section-number">06</span>
+            <div class="section-title-group">
+                <span class="section-label">Schedule a Visit</span>
+                <h2 data-content="booking.title">Book an Appointment</h2>
+            </div>
+        </div>
+        <p class="booking-subtitle" data-content="booking.subtitle">Choose a date and time that works for you.</p>
+        <div id="booking-widget" class="booking-widget">
+            <div class="booking-step" data-step="1">
+                <div class="booking-calendar">
+                    <div class="calendar-header">
+                        <button class="calendar-prev" aria-label="Previous month">&lsaquo;</button>
+                        <span class="calendar-month-year"></span>
+                        <button class="calendar-next" aria-label="Next month">&rsaquo;</button>
+                    </div>
+                    <div class="calendar-weekdays">
+                        <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+            </div>
+            <div class="booking-step" data-step="2" style="display:none;">
+                <h4 class="booking-step-title">Select a Time</h4>
+                <div id="booking-slots" class="booking-slots"></div>
+                <button class="booking-back btn btn-outline">Back</button>
+            </div>
+            <div class="booking-step" data-step="3" style="display:none;">
+                <h4 class="booking-step-title">Your Details</h4>
+                <form id="booking-form" class="booking-form">
+                    <div class="form-group">
+                        <label for="booking-name">Name *</label>
+                        <input type="text" id="booking-name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-email">Email *</label>
+                        <input type="email" id="booking-email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-phone">Phone</label>
+                        <input type="tel" id="booking-phone" name="phone" autocomplete="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-notes">Notes</label>
+                        <textarea id="booking-notes" name="notes" rows="3"></textarea>
+                    </div>
+                    <div class="booking-form-actions">
+                        <button type="button" class="booking-back btn btn-outline">Back</button>
+                        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                    </div>
+                </form>
+            </div>
+            <div class="booking-step" data-step="4" style="display:none;">
+                <div class="booking-confirmation">
+                    <div class="booking-confirm-icon">&#10003;</div>
+                    <h4>Booking Confirmed!</h4>
+                    <p class="booking-confirm-details"></p>
+                    <button class="btn btn-primary booking-new">Book Another</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section (FREE) -->
+    <section id="contactform" class="contactform" aria-label="Contact form">
+        <div class="section-header centered">
+            <span class="section-number">07</span>
+            <div class="section-title-group">
+                <span class="section-label">Send a Message</span>
+                <h2 data-content="contactform.title">Get in Touch</h2>
+            </div>
+        </div>
+        <p class="contactform-subtitle" data-content="contactform.subtitle">Have a question? We would love to hear from you.</p>
+        <form id="contact-form" class="contact-form-fields" novalidate>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="cf-name">Name *</label>
+                    <input type="text" id="cf-name" name="name" required autocomplete="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="cf-email">Email *</label>
+                    <input type="email" id="cf-email" name="email" required autocomplete="email" placeholder="you@example.com">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cf-phone">Phone</label>
+                <input type="tel" id="cf-phone" name="phone" autocomplete="tel" placeholder="(optional)">
+            </div>
+            <div class="form-group">
+                <label for="cf-message">Message *</label>
+                <textarea id="cf-message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+            </div>
+            <!-- Honeypot -->
+            <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-primary btn-large contactform-submit" data-content="contactform.button_text">Send Message</button>
+            <div id="contactform-status" class="contactform-status" role="status" aria-live="polite"></div>
+        </form>
+    </section>
+
+    <!-- Newsletter Section (ECOMMERCE) -->
+    <section id="newsletter" class="newsletter" aria-label="Newsletter signup" style="display:none;">
+        <div class="newsletter-inner">
+            <h3 data-content="newsletter.title">Stay in the Loop</h3>
+            <p data-content="newsletter.subtitle">Subscribe for updates, offers, and news.</p>
+            <form id="newsletter-form" class="newsletter-form" novalidate>
+                <div class="newsletter-input-group">
+                    <input type="email" id="nl-email" name="email" required placeholder="Your email address" autocomplete="email">
+                    <button type="submit" class="btn btn-primary" data-content="newsletter.button_text">Subscribe</button>
+                </div>
+                <!-- Honeypot -->
+                <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                    <input type="text" name="company" tabindex="-1" autocomplete="off">
+                </div>
+                <div id="newsletter-status" class="newsletter-status" role="status" aria-live="polite"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-info">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <div class="section-title-group">
+                    <span class="section-label">Get in Touch</span>
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span class="contact-label">Location</span>
+                    <span class="contact-value" data-content="contact.address">123 Main Street<br>Your City, ST 00000</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Hours</span>
+                    <span class="contact-value" data-content="contact.hours">Mon-Fri: 9am-5pm<br>Sat: 10am-3pm</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value" data-content="contact.phone">(555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value" data-content="contact.email">hello@yourbusiness.com</span>
+                </div>
+            </div>
+            <a href="tel:+15551234567" class="btn btn-primary btn-large">Call Us</a>
+        </div>
+        <div class="contact-visual">
+            <div class="deco-badge">
+                <div class="badge-inner">
+                    <span class="badge-icon">&bull;</span>
+                    <span class="badge-text">We're<br>Here to Help</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-diamond">&bull;</span>
+                <span data-content="site.name">Your Business Name</span>
+            </div>
+            <p class="footer-tagline" data-content="site.tagline">Your tagline goes here.</p>
+            <div class="footer-social">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Yelp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Business Name. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="plugins.js"></script>
+    <script src="shop.js"></script>
+    <script src="booking.js"></script>
+    <script src="quiz.js"></script>
+    <script>
+    (function() {
+        var hamburger = document.querySelector('.nav-hamburger');
+        var navLinks = document.querySelector('.nav-links');
+        if (!hamburger || !navLinks) return;
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+        });
+        navLinks.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    })();
+    </script>
 </body>
 </html>
